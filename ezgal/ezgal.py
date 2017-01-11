@@ -90,7 +90,8 @@ class ezgal(object):
 
 		# load additional modules.  Yes, this is strange.  But this way ezgal_light can inherit ezgal.
 		# this is necessary because ezgal_light is intended to work without any of these modules
-		import pyfits,cosmology,astro_filter,csp_integrator
+		import cosmology,astro_filter,csp_integrator
+		import astropy.io.fits as pyfits
 		import scipy.integrate as integrate
 		global cosmology
 		global pyfits
